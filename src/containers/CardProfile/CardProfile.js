@@ -41,6 +41,11 @@ const GithubDiv = styled.img`
   position: relative;
   left: 80%;
   top: 10%;
+  display: none;
+
+  @media (min-width: 470px) {
+    display: block;
+  }
 `;
 
 export default function CardProfile({

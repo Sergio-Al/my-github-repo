@@ -12,7 +12,15 @@ const GlassContent = styled.div`
   color: white;
   height: 512px;
   padding: 50px 40px;
-  width: 440px;
+  min-width: 300px;
+
+  @media (min-width: 375px) {
+    width: 350px;
+  }
+
+  @media (min-width: 992px) {
+    width: 440px;
+  }
 `;
 
 const ContentWrapper = styled.div`

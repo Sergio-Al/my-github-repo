@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import styled from "styled-components";
 import CardProfile from "../CardProfile/CardProfile";
-import { Facebook } from "react-content-loader";
+import CardLoader from "../../components/Skeletons/CardLoader";
 import CardProjects from "../CardProjects/CardProjects";
 
 const CardContainer = styled.div`
@@ -9,7 +9,7 @@ const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  >* {
+  > * {
     margin-bottom: 3rem;
   }
 
@@ -46,7 +46,8 @@ export default function CardsContainer() {
   if (loading)
     return (
       <CardContainer>
-        <Facebook backgroundColor="#dbc9fd" foregroundColor="#8a8aa4" />
+        <CardLoader />
+        <CardLoader />
       </CardContainer>
     );
 
@@ -61,8 +62,6 @@ export default function CardsContainer() {
     name: data.name,
     url: data.html_url,
   };
-
-  console.log(data);
 
   return (
     <CardContainer>

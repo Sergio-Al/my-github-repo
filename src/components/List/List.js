@@ -62,7 +62,6 @@ const WrapperProjects = styled.div`
 `;
 
 export function ListProjects({ items = [], title = "" }) {
-  console.log(items);
   return (
     <WrapperProjects>
       {title ? <TitleBody>{title}</TitleBody> : ""}
