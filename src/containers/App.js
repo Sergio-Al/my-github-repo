@@ -36,7 +36,7 @@ export default function App() {
     <>
       <GlobalStyle />
       <MainContainer>
-        <MainTitle>Your Github Repo</MainTitle>
+        <MainTitle>My Github Repo</MainTitle>
         <CardsContainer />
       </MainContainer>
     </>
